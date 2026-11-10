@@ -40,7 +40,7 @@ accessible-signup-form/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/accessible-signup-form.git
+git clone https://github.com/Takumismth/ava.git
 ```
 
 Navigate to the project:
