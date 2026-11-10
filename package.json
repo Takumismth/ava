@@ -1,0 +1,13 @@
+{
+  "name": "accessible-signup-form",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Accessible sign-up form built with HTML and Sass",
+  "scripts": {
+    "build": "sass styles/main.scss css/main.css --style=expanded",
+    "watch": "sass --watch styles/main.scss:css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}
