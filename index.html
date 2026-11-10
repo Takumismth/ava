@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An accessible sign-up form built with HTML and Sass.">
+  <title>Create Your Account</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main class="page">
+    <section class="signup-card" aria-labelledby="form-title">
+
+      <header class="form-header">
+        <div class="logo" aria-hidden="true">✦</div>
+        <p class="eyebrow">GET STARTED</p>
+        <h1 id="form-title">Create your account</h1>
+        <p class="subtitle">
+          Join us today. It only takes a few minutes.
+        </p>
+      </header>
+
+      <form action="#" method="post">
+
+        <div class="form-group">
+          <label for="fullname">Full name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="e.g. Alex Morgan"
+            autocomplete="name"
+            aria-required="true"
+            required
+          >
+          <span class="error-message" id="name-error">
+            <!-- Space reserved for future validation -->
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            aria-required="true"
+            required
+          >
+          <span class="error-message" id="email-error">
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              autocomplete="new-password"
+              aria-required="true"
+              aria-describedby="password-help"
+              required
+            >
+
+            <button
+              type="button"
+              class="toggle-password"
+              aria-label="Show password"
+              title="Show password"
+            >
+              Show
+            </button>
+          </div>
+
+          <small id="password-help">
+            Choose a strong password that meets all requirements.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm password</label>
+
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Enter your password again"
+            autocomplete="new-password"
+            aria-required="true"
+            required
+          >
+
+          <span class="error-message" id="confirm-error">
+          </span>
+        </div>
+
+        <section class="strength-section"
+          aria-labelledby="strength-title">
+
+          <div class="strength-heading">
+            <h2 id="strength-title">Password strength</h2>
+            <span class="strength-label">Not started</span>
+          </div>
+
+          <div
+            class="progress-track"
+            role="progressbar"
+            aria-label="Password requirements completed"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          >
+            <div class="progress-fill"></div>
+          </div>
+
+          <div class="progress-info">
+            <span>Account completeness</span>
+            <strong>0%</strong>
+          </div>
+
+          <h3 class="requirements-title">
+            Password requirements
+          </h3>
+
+          <ul class="requirements-list">
+            <li>
+              <span class="check-icon" aria-hidden="true">✓</span>
+              At least 8 characters
+            </li>
+            <li>
+              <span class="check-icon" aria-hidden="true">✓</span>
+              One uppercase letter
+            </li>
+            <li>
+              <span class="check-icon" aria-hidden="true">✓</span>
+              One lowercase letter
+            </li>
+            <li>
+              <span class="check-icon" aria-hidden="true">✓</span>
+              One number
+            </li>
+            <li>
+              <span class="check-icon" aria-hidden="true">✓</span>
+              One special character
+            </li>
+            <li>
+              <span class="check-icon" aria-hidden="true">✓</span>
+              Passwords match
+            </li>
+          </ul>
+        </section>
+
+        <button type="submit" class="submit-button">
+          Create account
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="login-text">
+          Already have an account?
+          <a href="#">Sign in</a>
+        </p>
+
+      </form>
+    </section>
+
+    <footer class="page-footer">
+      <p>Designed with accessibility in mind.</p>
+    </footer>
+
+  </main>
+</body>
+</html>
